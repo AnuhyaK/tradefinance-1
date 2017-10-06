@@ -1,0 +1,66 @@
+WORK FLOW:
+
+This Application is related to exchange of products between buyer and seller with an agreement with their respective banks.
+
+ASSIGNING DNS:
+
+You need to install DNS in ubuntu
+Changes need to be done in our HTML files and JS file are:
+we need to replace our ip address with Domain name server i.e; 172.27.80.66 with idrbtcps.com
+
+REQUIRED SOFTWARES:
+
+1.Install nodejs
+2.Install mongodb
+3.Install express
+4.Install body-parser
+5.Install multer
+6.Install cookie-parser
+
+MONGODB DATABASE:
+
+First, you need to create database named Bank
+second, you need to create collections named 
+1.User
+2.bank
+3.mtt
+
+1.User table: whenever new user registers it automatically updates.
+The fields in the User table are :
+1.userid
+2.userpassword
+3.username
+4.bankname
+5.bankaccno
+6.bankifsc
+
+2.bank table: you need to create default bank admin details i.e; it should be done manually by user itself.
+The fields in the bank table are :
+1.bankadmin
+2.userpassword
+3.username
+4.bankname
+5.bankifsc
+
+3.mtt table: This table holds the complete record of transactions details of buyer and seller.
+The fields in the mtt table are:
+1.transid: transaction id is given for one complete transaction.
+2.msgid: message id will be generated for each action
+3.from: It holds buyer id
+4.to:It holds seller name
+5.buyer: It holds buyer Id 
+6.buyeraccno: It holds account number of buyer
+7.buyerbank:It holds the bank name of buyer
+8.buyerifsc:It holds the ifsc code of the buyer bank
+9.sellername: It holds the seller name
+10.sellerbank: It holds the bank name of seller
+11.selleraccno:It holds account number of seller
+12.sellerifsc:It holds the ifsc code of the seller bank
+13.purchase order:buyer request to buyer bank for applying lc to seller bank;
+It performs one action so msgid =1
+14.lc:buyer bank has rights for approving or disapproving lc
+It performs one action so msgid =2
+15.shipping doc:seller upload shipping documents
+It performs one action so msgid =3
+16.paymentreceipt:buyer bank checks payment receipt 
+It performs one action so msgid =4
