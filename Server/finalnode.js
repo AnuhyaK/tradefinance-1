@@ -671,10 +671,36 @@ app.post('/login',urlencodedParser, function(req, res){
 						}
 						else
 						{
-							res.cookie('id', req.body.userid);
-							console.log('Cookies: ', req.cookies);
-							res.redirect('buybank.html');
-						}
+					
+								if(result==null){
+								res.writeHead(200, { 'Content-Type': 'text/html' });
+								res.write('<center><body bgcolor=Lightblue><p> Invalid User Id</p></body>');
+
+								res.write('<br><form action="http://idrbtcps.com:8081/login.html" method ="POST"> <button type="submit">click here to  login</button></form>');
+								res.end();}
+
+							else
+								{
+								if((result.userpassword).localeCompare(req.body.password)==0)
+								{
+
+								res.cookie('id', req.body.userid);
+								console.log('Cookies: ', req.cookies);
+
+								return res.redirect('buybank.html');
+								}
+								else
+								{
+									res.writeHead(200, { 'Content-Type': 'text/html' });
+									res.write('<center><body bgcolor=Lightblue><p> Username or password does not match</p></body>');
+
+									res.write('<br><form action="http://idrbtcps.com:8081/login.html" method ="POST"> <button type="submit">click here to  login</button></form>');
+									res.end();
+								}
+								}
+						
+					}
+
 				});
 
 		});
