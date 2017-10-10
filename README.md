@@ -20,13 +20,13 @@ Step 7: buyer will collects the products by using shipping documents which has b
  
 The commands for installing nodejs:
 
-command :**$ sudo apt-get update
+command :**$ sudo apt-get update**
 
-command : **$ sudo apt-get install nodejs
+command : **$ sudo apt-get install nodejs**
 
 The command for installing nodejs package manager:
 
-command : **$ sudo apt-get install npm
+command : **$ sudo apt-get install npm**
 
 2.mongodb
 
@@ -38,36 +38,36 @@ https://www.howtoforge.com/tutorial/install-mongodb-on-ubuntu-16.04/
 
 The command for installing express:
 
-command : **$ sudo npm install -g express
+command : **$ sudo npm install -g express**
 
 4.body-parser
 
 The command for installing body-parser:
 
-command : **$ sudo npm install body-parser
+command : **$ sudo npm install body-parser**
 
 5.multer
  
 The command for installing multer:
 
-command : **$ sudo npm install --save multer
+command : **$ sudo npm install --save multer**
 
 6.cookie-parser
 
 The command for installing cookie-parser:
 
-command : **$ sudo npm install cookie-parser
+command : **$ sudo npm install cookie-parser**
 
 # ASSIGNING DOMAIN NAME:
 
 Step 1 : Add domain name and ip address in :
- command : **$ sudo gedit /etc/hosts
+ command : **$ sudo gedit /etc/hosts**
  
 172.27.80.66    idrbtcps.com
 
 Step 2 : Add the following lines in:
 
- command : **$ sudo gedit /etc/network/interfaces
+ command : **$ sudo gedit /etc/network/interfaces**
 
 auto enp0f3
 iface enp0f3 inet static
