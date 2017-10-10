@@ -1,4 +1,4 @@
-1.WORK FLOW:
+# WORK FLOW:
 
 This Application is related to exchange of products between buyer and seller with an agreement with their respective banks.
 
@@ -14,19 +14,19 @@ Step 5: buyer bank review shipping documents and approve payment receipt and sen
 Step 6: seller receives the payment confirmation from seller bank.
 Step 7: buyer will collects the products by using shipping documents which has been sent by buyer bank.
 
-2.PREREQUISITE SOFTWARES:
+# PREREQUISITE SOFTWARES:
 
 1.nodejs
  
 The commands for installing nodejs:
 
-command : $ sudo apt-get update
+# command :**$ sudo apt-get update
 
-command : $ sudo apt-get install nodejs
+# command : **$ sudo apt-get install nodejs
 
 The command for installing nodejs package manager:
 
-command : $ sudo apt-get install npm
+# command : **$ sudo apt-get install npm
 
 2.mongodb
 
@@ -38,37 +38,37 @@ https://www.howtoforge.com/tutorial/install-mongodb-on-ubuntu-16.04/
 
 The command for installing express:
 
-command : $ sudo npm install -g express
+# command : **$ sudo npm install -g express
 
 4.body-parser
 
 The command for installing body-parser:
 
-command : $ sudo npm install body-parser
+# command : **$ sudo npm install body-parser
 
 5.multer
  
 The command for installing multer:
 
-command : $ sudo npm install --save multer
+# command : **$ sudo npm install --save multer
 
 6.cookie-parser
 
 The command for installing cookie-parser:
 
-command : $ sudo npm install cookie-parser
+# command : **$ sudo npm install cookie-parser
 
-3.ASSIGNING DOMAIN NAME:
+# ASSIGNING DOMAIN NAME:
 
 Step 1 : Add domain name and ip address in :
 
-command : $ sudo gedit /etc/hosts
+# command : **$ sudo gedit /etc/hosts
  
 172.27.80.66    idrbtcps.com
 
 Step 2 : Add the following lines in:
 
-command : $ sudo gedit /etc/network/interfaces
+# command : **$ sudo gedit /etc/network/interfaces
 
 auto enp0f3
 iface enp0f3 inet static
@@ -79,7 +79,7 @@ dns-nameservers 172.27.80.66 8.8.8.8
 
 Step 3 : Replace ip address with Domain name in client and server interfaces i.e; 172.27.80.66 with idrbtcps.com
 
-4.MONGODB DATABASE:
+# MONGODB DATABASE:
 
 Step 1 : create database named Bank
 Step 2 : create collections named 
