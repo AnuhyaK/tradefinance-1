@@ -4,6 +4,7 @@ This Application is related to exchange of products between buyer and seller wit
 
 ASSIGNING DNS:
 
+ ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
 You need to install DNS in ubuntu
 Changes need to be done in our HTML files and JS file are:
 we need to replace our ip address with Domain name server i.e; 172.27.80.66 with idrbtcps.com
