@@ -1,6 +1,7 @@
-WORK FLOW:
+1.WORK FLOW:
 
 This Application is related to exchange of products between buyer and seller with an agreement with their respective banks.
+
 Step 1: buyer and seller should have registered with their respective banks.If not register
 Step 2: buyer applies for LC for seller bank.
 	It performs one action so msgid =1
@@ -13,7 +14,7 @@ Step 5: buyer bank review shipping documents and approve payment receipt and sen
 Step 6: seller receives the payment confirmation from seller bank.
 Step 7: buyer will collects the products by using shipping documents which has been sent by buyer bank.
 
-PREREQUISITE SOFTWARES:
+2.PREREQUISITE SOFTWARES:
 
 1.nodejs
  
@@ -57,7 +58,7 @@ The command for installing cookie-parser:
 
 command : $ sudo npm install cookie-parser
 
-ASSIGNING DOMAIN NAME:
+3.ASSIGNING DOMAIN NAME:
 
 Step 1 : Add domain name and ip address in :
 
@@ -78,7 +79,7 @@ dns-nameservers 172.27.80.66 8.8.8.8
 
 Step 3 : Replace ip address with Domain name in client and server interfaces i.e; 172.27.80.66 with idrbtcps.com
 
-MONGODB DATABASE:
+4.MONGODB DATABASE:
 
 Step 1 : create database named Bank
 Step 2 : create collections named 
